@@ -1,4 +1,4 @@
-// src/componentes/layout/Footer.jsx
+
 import styles from './Footer.module.css';
 import { Nosotros } from '../Nosotros/Nosotros';
 
