@@ -53,6 +53,12 @@ function Header() {
                                 <span className={styles.carritoCount}>0</span>
                             </span>
                         </li>
+                        <li className={styles.navItem}>
+                            <span className={styles.navLink}>
+                                ➕ Alta Producto
+                                <span className={styles.carritoCount}>0</span>
+                            </span>
+                        </li>
                     </ul>
                 </nav>
             </div>

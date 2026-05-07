@@ -6,7 +6,7 @@ function Footer() {
     return (
         <footer className={styles.footer}>
             <Nosotros />
-            <p>&copy; 2025 - Mi Aplicación React</p>
+            <p>&copy; 2025 - Provincia de Buenos Aires Argentina</p>
         </footer>
     );
 }
