@@ -1,6 +1,6 @@
-/* src/componentes/layout/Header.module.css */
 
-/* Contenedor principal del header */
+
+
 .header {
     background-color: #1e2f2a;
     position: sticky;
@@ -9,7 +9,6 @@
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
-/* Contenedor interno con ancho máximo */
 .headerContainer {
     max-width: 1400px;
     margin: 0 auto;
@@ -19,7 +18,7 @@
     align-items: center;
 }
 
-/* Logo */
+
 .logo {
     display: flex;
     align-items: center;
@@ -51,7 +50,7 @@
     text-align: left;
 }
 
-/* Navegación */
+
 .navLista {
     display: flex;
     gap: 10px;
@@ -91,7 +90,7 @@
     margin-left: 5px;
 }
 
-/* Botón hamburguesa (solo para celular) */
+
 .hamburguesa {
     display: none;
     background: none;
@@ -108,7 +107,7 @@
     transition: all 0.2s;
 }
 
-/* Estilos para pantallas chicas (celulares) */
+
 @media (max-width: 768px) {
     .hamburguesa {
         display: block;
@@ -124,7 +123,7 @@
         transition: left 0.3s;
     }
 
-    /* Cuando el menú está abierto */
+    
     .navAbierto {
         left: 0;
     }

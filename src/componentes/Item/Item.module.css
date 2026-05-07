@@ -1,6 +1,4 @@
-/* src/componentes/Item/Item.module.css */
-
-/* Tarjeta del producto */
+ 
 .itemCard {
     background-color: white;
     border-radius: 20px;
@@ -10,7 +8,7 @@
     transition: all 0.2s;
 }
 
-/* Efecto al pasar el mouse por encima */
+
 .itemCard:hover {
     transform: translateY(-5px);
     box-shadow: 0 12px 25px rgba(0,0,0,0.12);
@@ -33,7 +31,7 @@
     justify-content: center;
 }
 
-/* Contenedor de la imagen */
+
 .imagenContainer {
     height: 200px;
     background-color: #f5f2ed;
@@ -63,7 +61,7 @@
     margin: 0 0 5px 0;
 }
 
-/* Precio */
+
 .precio {
     font-size: 24px;
     font-weight: 600;
@@ -71,7 +69,7 @@
     margin: 8px 0;
 }
 
-/* Info de stock */
+
 .stock {
     font-size: 12px;
     color: #8f8a82;
@@ -143,7 +141,6 @@
     transform: translateY(-2px);
 }
 
-/* Para pantallas chicas */
 @media (max-width: 768px) {
     .itemCard {
         width: 100%;

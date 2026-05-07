@@ -1,13 +1,11 @@
-/* src/componentes/ItemListContainer/ItemListContainer.module.css */
 
-/* Contenedor principal */
 .container {
     max-width: 1400px;
     margin: 0 auto;
     padding: 20px 30px;
 }
 
-/* Título */
+
 .titulo {
     text-align: center;
     font-size: 32px;
@@ -16,7 +14,6 @@
     margin-bottom: 10px;
 }
 
-/* Línea decorativa debajo del título */
 .titulo::after {
     content: '';
     display: block;
@@ -26,7 +23,7 @@
     margin: 12px auto 0;
 }
 
-/* Subtítulo */
+
 .subtitulo {
     text-align: center;
     color: #9a9a9a;
@@ -34,7 +31,7 @@
     font-size: 14px;
 }
 
-/* Mensaje de carga */
+
 .mensaje {
     text-align: center;
     padding: 40px;
@@ -46,7 +43,7 @@
     margin: 50px auto;
 }
 
-/* Mensaje de error */
+
 .error {
     text-align: center;
     padding: 25px;
@@ -57,7 +54,7 @@
     margin: 40px auto;
 }
 
-/* Para pantallas chicas */
+
 @media (max-width: 768px) {
     .container {
         padding: 15px;

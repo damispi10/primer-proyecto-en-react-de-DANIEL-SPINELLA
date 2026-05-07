@@ -1,6 +1,4 @@
-/* src/componentes/ItemList/ItemList.module.css */
 
-/* Grid de productos */
 .listaProductos {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -9,7 +7,7 @@
     padding: 10px;
 }
 
-/* Mensaje cuando no hay productos */
+
 .sinProductos {
     text-align: center;
     padding: 50px;
@@ -19,7 +17,7 @@
     border-radius: 28px;
 }
 
-/* Para celulares */
+
 @media (max-width: 640px) {
     .listaProductos {
         grid-template-columns: 1fr;
