@@ -1,0 +1,93 @@
+/* src/componentes/Nosotros/Nosotros.module.css */
+.nosotros {
+    width: 100%;
+    padding: 20px;
+}
+
+.nosotros h3 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 450;
+    color: white;
+    margin-bottom: 25px;
+}
+
+.equipo {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.miembro {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255,255,255,0.05);
+    border-radius: 28px;
+    width: 100%;
+    max-width: 230px;
+}
+
+.miembro:hover {
+    background-color: rgba(255,255,255,0.08);
+}
+
+.foto {
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 12px;
+    border: 2px solid rgba(200,160,110,0.5);
+    padding: 2px;
+}
+
+.miembro h4 {
+    margin: 8px 0 4px;
+    color: white;
+    font-size: 16px;
+}
+
+.puesto {
+    color: #c8a06e;
+    font-size: 12px;
+    margin: 5px 0;
+    text-transform: uppercase;
+}
+
+.email {
+    color: rgba(255,255,255,0.5);
+    font-size: 11px;
+}
+
+.mensaje {
+    text-align: center;
+    padding: 30px;
+    background-color: rgba(255,255,255,0.05);
+    border-radius: 28px;
+    color: rgba(255,255,255,0.8);
+}
+
+.error {
+    text-align: center;
+    padding: 20px;
+    color: #e8c49a;
+    background-color: rgba(188,111,90,0.15);
+    border-radius: 24px;
+}
+
+@media (max-width: 600px) {
+    .equipo {
+        gap: 15px;
+    }
+    
+    .miembro {
+        padding: 15px;
+        max-width: 180px;
+    }
+    
+    .foto {
+        width: 75px;
+        height: 75px;
+    }
+}

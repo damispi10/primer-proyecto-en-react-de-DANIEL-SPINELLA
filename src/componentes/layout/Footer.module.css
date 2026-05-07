@@ -1,0 +1,28 @@
+
+.footer {
+    background: linear-gradient(135deg, #1e2f2a 0%, #0f1916 100%);
+    padding: 2.5rem 1rem 1.5rem;
+    margin-top: 4rem;
+}
+
+.footerContent {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer p {
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(255,255,255,0.08);
+    font-size: 0.85rem;
+    color: rgba(255,255,255,0.5);
+    letter-spacing: 0.5px;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        margin-top: 2rem;
+        padding: 1.5rem 1rem 1rem;
+    }
+}

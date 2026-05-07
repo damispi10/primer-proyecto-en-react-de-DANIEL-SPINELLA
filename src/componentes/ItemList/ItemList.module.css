@@ -1,0 +1,27 @@
+/* src/componentes/ItemList/ItemList.module.css */
+
+/* Grid de productos */
+.listaProductos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+    justify-items: center;
+    padding: 10px;
+}
+
+/* Mensaje cuando no hay productos */
+.sinProductos {
+    text-align: center;
+    padding: 50px;
+    color: #8e8e8e;
+    font-size: 16px;
+    background-color: white;
+    border-radius: 28px;
+}
+
+/* Para celulares */
+@media (max-width: 640px) {
+    .listaProductos {
+        grid-template-columns: 1fr;
+    }
+}
