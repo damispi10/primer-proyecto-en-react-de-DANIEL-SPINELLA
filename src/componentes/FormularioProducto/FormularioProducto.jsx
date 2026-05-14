@@ -38,6 +38,18 @@ export function FormularioProducto({ datosForm, manejarCambio, manejarEnvio, man
                     className={`${styles.input} ${styles.inputFile}`}
                 />
             </div>
+            <div>
+                <label className={styles.label}>
+                    <input
+                        type="checkbox"
+                        name="oferta"
+                        checked={datosForm.oferta}
+                        onChange={manejarCambio}
+                        style={{ marginRight: 8 }}
+                    />
+                    Producto en oferta
+                </label>
+            </div>
             <button type="submit" className={styles.boton}>
                 Guardar Producto
             </button>

@@ -6,15 +6,16 @@ export function FormularioContainer() {
     const [datosForm, setDatosForm] = useState({
         nombre: '',
         precio: '',
-        stock: ''
+        stock: '',
+        oferta: false
     });
     const [imagenFile, setImagenFile] = useState(null);
 
     const manejarCambio = (evento) => {
-        const { name, value } = evento.target;
+        const { name, value, type, checked } = evento.target;
         setDatosForm({
             ...datosForm,
-            [name]: value
+            [name]: type === 'checkbox' ? checked : value
         });
     };
 
