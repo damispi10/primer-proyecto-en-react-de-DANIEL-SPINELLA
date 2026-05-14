@@ -1,0 +1,97 @@
+.card {
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    width: 280px;
+    transition: all 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+}
+
+.imagen {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    background-color: #f5f2ed;
+}
+
+.contenido {
+    padding: 15px;
+}
+
+.nombre {
+    font-size: 16px;
+    font-weight: 500;
+    color: #1e2f2a;
+    margin: 0 0 5px 0;
+}
+
+.precio {
+    font-size: 24px;
+    font-weight: 600;
+    color: #b8864b;
+    margin: 8px 0;
+}
+
+.selectorCantidad {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f8f6f3;
+    border-radius: 40px;
+    padding: 5px;
+    margin: 12px 0;
+}
+
+.selectorCantidad button {
+    width: 36px;
+    height: 36px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: bold;
+    color: #5a4a3a;
+}
+
+.selectorCantidad button:hover {
+    background-color: #e8e2da;
+}
+
+.cantidad {
+    font-size: 16px;
+    font-weight: 500;
+    min-width: 40px;
+    text-align: center;
+}
+
+.subtotal {
+    font-size: 14px;
+    color: #5a4a3a;
+    font-weight: 500;
+    margin: 8px 0;
+}
+
+.eliminar {
+    width: 100%;
+    padding: 10px;
+    background-color: transparent;
+    border: 1px solid #e2dcd5;
+    border-radius: 40px;
+    cursor: pointer;
+    color: #c97e5a;
+    font-weight: 500;
+    font-size: 13px;
+    transition: all 0.2s;
+    margin-top: 4px;
+}
+
+.eliminar:hover {
+    background-color: #fef1f0;
+    border-color: #c97e5a;
+}

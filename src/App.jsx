@@ -5,12 +5,14 @@ import { FormularioContainer } from './componentes/FormularioContainer/Formulari
 import { Ofertas } from './componentes/Ofertas/Ofertas';
 import {Contacto} from './componentes/Contacto/Contacto';
 import {Carrito} from './componentes/Carrito/Carrito'
+import { ItemDetailContainer } from './componentes/ItemDetailContainer/ItemDetailContainer';
 function App() {
     return (
         <Routes>
             <Route element={<Layout />}>
                 <Route path="/" element={<Ofertas />} />
                 <Route path="/productos" element={<ItemListContainer />} />
+                <Route path="/producto/:id" element={<ItemDetailContainer />} />
                 <Route path="/alta-producto" element={<FormularioContainer />} />
                 <Route path="/contacto" element={<Contacto/>} />
                 <Route path="/carrito" element={<Carrito/>} />

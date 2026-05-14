@@ -1,8 +1,11 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import styles from './Header.module.css';
+import { useCart } from '../../context/CartContext';
 function Header() {
     const [menuAbierto, setMenuAbierto] = useState(false);
+    const { getCartQuantity } = useCart();
+    const totalItems = getCartQuantity();
     const toggleMenu = () => {
         setMenuAbierto(!menuAbierto);
     };
@@ -13,8 +16,8 @@ function Header() {
                     <span className={styles.logoIcon}>🛍️</span>
                     <h1 className={styles.titulo}>MiAppReact</h1>
                 </div>
-                <button 
-                    className={styles.hamburguesa} 
+                <button
+                    className={styles.hamburguesa}
                     onClick={toggleMenu}
                     aria-label="Menú"
                 >
@@ -41,8 +44,7 @@ function Header() {
                         </li>
                         <li className={styles.navItem}>
                             <Link to="/carrito" className={styles.navLink}>
-                                🛒 Carrito
-                                <span className={styles.carritoCount}>0</span>
+                                🛒 Carrito {totalItems > 0 && <span className={styles.carritoCount}>{totalItems}</span>}
                             </Link>
                         </li>
                         <li className={styles.navItem}>
