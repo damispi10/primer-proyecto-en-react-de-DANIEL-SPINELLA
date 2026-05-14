@@ -8,8 +8,8 @@ export function Ofertas() {
         fetch('/data/productos.json')
             .then(res => res.json())
             .then(data => {
-                const ordenados = [...data].sort((a, b) => a.precio - b.precio);
-                setProductos(ordenados.slice(0, 2));
+                const filtrados = data.filter(p => p.oferta === true);
+                setProductos(filtrados);
                 setCargando(false);
             })
             .catch(() => setCargando(false));

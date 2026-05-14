@@ -4,27 +4,31 @@
         "nombre": "Zapatillas Adidas",
         "precio": 12000,
         "stock": 15,
-        "imagen": "/images/adidas1.png"
+        "imagen": "/images/adidas1.png",
+        "oferta": true
     },
     {
         "id": "2",
         "nombre": "BicicletaPro",
         "precio": 1302000,
         "stock": 15,
-        "imagen": "/images/bici1.png"
+        "imagen": "/images/bici1.png",
+        "oferta": false
     },
     {
         "id": "3",
         "nombre": "Lentes",
         "precio": 12000,
         "stock": 15,
-        "imagen": "/images/lentes.png"
+        "imagen": "/images/lentes.png",
+        "oferta": true
     },
     {
         "id": "4",
         "nombre": "Campera",
         "precio": 12000,
         "stock": 15,
-        "imagen": "/images/campera.png"
+        "imagen": "/images/campera.png",
+        "oferta": false
     }
 ]
